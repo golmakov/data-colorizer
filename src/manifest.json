@@ -1,0 +1,20 @@
+{
+    "compatibleVersion": 3,
+    "bundleVersion": 1,
+    "identifier": "com.golmakov.data-colorizer",
+    "commands": [
+      {
+        "name": "Re-color with data...",
+        "identifier": "recolor-with-data",
+        "icon" : "recolor.png",
+        "script": "./colorize.js",
+        "isRoot": true
+      }
+    ],
+    "menu": {
+      "title": "Data colorizer",
+      "items": [
+        "recolor-with-data"
+      ]
+    }
+}

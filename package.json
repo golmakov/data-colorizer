@@ -1,0 +1,16 @@
+{
+  "name": "data-colorizer",
+  "title": "Data Colorizer",
+  "description": "Sketch plugin for re-coloring graphics based on JSON data files",
+  "homepage": "https://github.com/golmakov/sketch-hyphenator",
+  "author": "Aleksander Golmakov",
+  "version": "0.1.0",
+  "identifier": "com.golmakov.data-colorizer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/golmakov/sketch-hyphenator.git"
+  },
+  "engines": {
+    "sketch": ">=3.0"
+  }
+}
