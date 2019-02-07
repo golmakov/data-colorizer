@@ -10,19 +10,26 @@ This plugin was ispired by Gregor Aisch's [Illustrator script](https://www.vis4.
 Create the JSON file with simmilar structure:
 ```JSON
 [{
-    "data": {
-        "AL": { "fill": "#cc3d3d", "stroke": false },
-        "AK": { "fill": "#cc3d3d", "stroke": false },
-        "AZ": { "fill": "#cc3d3d", "stroke": false },
-        "AR": { "fill": "#cc3d3d", "stroke": false },
-        "CA": { "fill": "#1a80c4", "stroke": false },
-        "CO": { "fill": "#1a80c4", "stroke": false },
-        //...
-    }
+    {"key": "AL", "fill": "#cc3d3d", "stroke": false },
+    {"key": "AK", "fill": "#cc3d3d", "stroke": false },
+    {"key": "AZ", "fill": "#cc3d3d", "stroke": false },
+    {"key": "AR", "fill": "#cc3d3d", "stroke": false },
+    {"key": "CA", "fill": "#1a80c4", "stroke": false },
+    {"key": "CO", "fill": "#1a80c4", "stroke": false },
+    //...
 }]
 ```
 
 The keys under the `data` section need to match the shape names in the Sketch document, in our case the two-letter state codes. The `fill` and `stroke` keys define colors in which shapes will be colored. If you set stroke or fill to false, Sketch will remove the stroke/fill. If you want either stroke or fill to be left unchanged, simply leave them out in the data file.
+
+Optionaly, you can also specify group in which shape will be matched:
+```JSON
+[{
+    {"key": "AL", "group": "USA", "fill": "#cc3d3d", "stroke": false },
+    {"key": "AL", "group": "Russia", "fill": "#1a80c4", "stroke": false },
+    //...
+}]
+```
 
 You can use whatever script or data source you want to create this file.
 
